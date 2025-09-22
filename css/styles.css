@@ -316,17 +316,28 @@ h3 p {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  gap: 5px;
+  gap: 20px;
 }
-.social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-links a {
+  border-radius: 50px;
   background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
 }
 .icon-instagram {
   width: 16px;
-  height: 16px;
+  height: 13px;
 }
 .icon-twitter {
   width: 16px;
@@ -339,4 +350,28 @@ h3 p {
 .icon-linkedin {
   width: 16px;
   height: 16px;
+}
+.thumb {
+  position: relative;
+  width: 25%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5 ease;
+  background-color: #4d5ae5;
+}
+.content-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  position: absolute;
+}
+.thumb:hover .overlay {
+  opacity: 1;
 }
