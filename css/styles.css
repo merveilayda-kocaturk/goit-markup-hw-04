@@ -73,7 +73,7 @@
   font-size: 16px;
   font-style: Regular;
   display: flex;
-  gap: 200px;
+  gap: 120px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -357,10 +357,10 @@ h3 p {
 }
 
 h3 p {
-  margin-bottom: 100px;
+  margin-bottom: 8px;
 }
 .back-3 h3 {
-  margin-bottom: 13px;
+  margin-bottom: 32px;
 }
 .back-3 p {
   margin-bottom: 20px;
@@ -372,5 +372,54 @@ h3 p {
   margin-bottom: 72px;
 }
 .no-bullets-1 h3 {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+.cashless-card {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 300px;
+}
+.cashless-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3 ease;
+}
+.cashless-card .hover-img {
+  opacity: 0;
+}
+.cashless-card:hover .hover-img {
+  opacity: 1;
+}
+.cashless-card:hover .normal-img {
+  opacity: 0;
+}
+.overlay-text {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3 ease;
+}
+.cashless-card:hover .overlay-text {
+  opacity: 1;
+}
+img {
+  display: block;
+  margin-bottom: 32px;
+}
+.cashless-card {
+  display: block;
+  margin-bottom: 32px;
 }
